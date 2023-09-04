@@ -11,10 +11,15 @@ export default function CategoryPage() {
   return (
     <div>
       <Header />
-      <div>
-        <button onClick={() => navigate(-1)}>Back</button>
-        <h2>
-          Blogs On <span>{category}</span>
+      <div className="w-11/12 max-w-2xl mx-auto mt-[100px] flex items-center gap-x-2">
+        <button
+          className="border-2 border-gray-300 py-1 px-4 rounded-md"
+          onClick={() => navigate(-1)}
+        >
+          Back
+        </button>
+        <h2 className="text-xl font-bold">
+          Blogs On <span className="underline">{category}</span>
         </h2>
       </div>
       <Blogs />

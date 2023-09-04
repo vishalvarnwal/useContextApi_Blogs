@@ -7,7 +7,9 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <Blogs />
+      <div className="mt-[100px]">
+        <Blogs />
+      </div>
       <Pagination />
     </div>
   );
